@@ -1,4 +1,4 @@
-const Products = () => {
-  return <>all products here</>;
+const Products = ({ category }) => {
+  return <div>{category}</div>;
 };
 export default Products;

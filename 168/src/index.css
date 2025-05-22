@@ -20,3 +20,16 @@
   background-color: #6e4f33;
   padding: 3px;
 }
+.button {
+  background-color: black;
+  max-height: 40px;
+  height: auto;
+  width: auto;
+}
+.products {
+  display: flex;
+  direction: row;
+  justify-content: flex-start;
+}
+.product {
+}
