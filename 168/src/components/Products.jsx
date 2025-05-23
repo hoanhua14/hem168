@@ -18,14 +18,14 @@ const productList = {
 const Products = ({ category }) => {
   const products = productList[category];
   return (
-    <div>
+    <section className="products">
       <div>{category}</div>
       <div>
         {products.map((product) => (
           <ProductCard key={product.id} name={product.name} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 export default Products;

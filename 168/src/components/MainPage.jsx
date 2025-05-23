@@ -8,9 +8,9 @@ const MainPage = () => {
         <img src="/assets/logo.png" alt="logo" className="logo"></img>
         <Button className="button" />
       </div>
-      <Products className="products" category="Signatures" />
-      <Products className="products" category="Cream Puffs" />
-      <Products className="products" category="Brownies" />
+      <Products category="Signatures" />
+      <Products category="Cream Puffs" />
+      <Products category="Brownies" />
     </>
   );
 };

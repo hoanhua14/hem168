@@ -28,8 +28,10 @@
 }
 .products {
   display: flex;
-  direction: row;
+  flex-direction: row;
   justify-content: flex-start;
+  border: 1px solid black;
+  height: 50px;
 }
 .product {
 }
