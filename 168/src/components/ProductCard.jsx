@@ -1,4 +1,4 @@
 const ProductCard = ({ name }) => {
-  return <div>{name}</div>;
+  return <div className="product-card">{name}</div>;
 };
 export default ProductCard;

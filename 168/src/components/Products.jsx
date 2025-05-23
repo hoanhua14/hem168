@@ -19,11 +19,13 @@ const Products = ({ category }) => {
   const products = productList[category];
   return (
     <section className="products">
-      <div>{category}</div>
       <div>
-        {products.map((product) => (
-          <ProductCard key={product.id} name={product.name} />
-        ))}
+        {category}
+        <div style={{ display: "flex" }}>
+          {products.map((product) => (
+            <ProductCard key={product.id} name={product.name} />
+          ))}
+        </div>
       </div>
     </section>
   );

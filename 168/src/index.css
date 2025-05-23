@@ -28,10 +28,17 @@
 }
 .products {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   border: 1px solid black;
-  height: 50px;
+  height: 50%;
+  margin: 2%;
 }
-.product {
+.products > div {
+  width: 100%;
+}
+.product-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1%;
+  width: 30%;
 }
