@@ -37,7 +37,7 @@
 }
 .product-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   padding: 1%;
   width: 30%;
