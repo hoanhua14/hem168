@@ -19,6 +19,8 @@
   width: auto;
   background-color: #6e4f33;
   padding: 3px;
+  border-radius: 30%;
+  zoom: 115%;
 }
 .button {
   background-color: black;
