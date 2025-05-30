@@ -13,11 +13,8 @@ const cartSlice = createSlice({
       state.items.push(newItem);
       state.totalPrice += newItem.price;
       state.totalItems = state.items.length;
-      console.log(newItem);
     },
-    removeItem: (state, action) => {
-      const newItem = action.payload;
-    },
+    // removeItem: (state, action) => {},
   },
 });
 export const { addItem } = cartSlice.actions;
