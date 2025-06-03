@@ -2,17 +2,17 @@ import ProductCard from "./ProductCard";
 
 const productList = {
   Signatures: [
-    { id: 1, name: "Tiramisu", price: 100000 },
-    { id: 2, name: "Flan", price: 55000 },
+    { id: 1, name: "Tiramisu", price: 100000, quantity: 0 },
+    { id: 2, name: "Flan", price: 55000, quantity: 0 },
   ],
   "Cream Puffs": [
-    { id: 3, name: "Vanilla", price: 72000 },
-    { id: 4, name: "Assorted", price: 77000 },
+    { id: 3, name: "Vanilla", price: 72000, quantity: 0 },
+    { id: 4, name: "Assorted", price: 77000, quantity: 0 },
   ],
   Brownies: [
-    { id: 5, name: "Matcha", price: 55000 },
-    { id: 6, name: "Truyền Thống", price: 55000 },
-    { id: 7, name: "Oreo Cheese Cake", price: 55000 },
+    { id: 5, name: "Matcha", price: 55000, quantity: 0 },
+    { id: 6, name: "Truyền Thống", price: 55000, quantity: 0 },
+    { id: 7, name: "Oreo Cheese Cake", price: 55000, quantity: 0 },
   ],
 };
 const Products = ({ category }) => {
@@ -28,6 +28,7 @@ const Products = ({ category }) => {
               name={product.name}
               price={product.price}
               id={product.id}
+              quantity={product.quantity}
             />
           ))}
         </div>

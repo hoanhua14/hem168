@@ -1,17 +1,24 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Header from "./Header";
+import { addItem, removeItem } from "../features/cartSlice";
 export default function Summary() {
   const formatVND = (number) =>
     number.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
   const items = useSelector((state) => state.cart.items);
-  const totalPrice = items.reduce((sum, item) => sum + item.price, 0);
+  const totalPrice = useSelector((state) => state.cart.totalPrice);
+  const dispatch = useDispatch();
+
   return (
     <>
       <Header />
       {console.log(items)}
       <div>
         {items.map((item, index) => (
-          <h1 key={index}>{item.name}</h1>
+          <h1 key={index}>
+            {item.name}, {formatVND(item.price)}, {item.quantity},
+            <button onClick={() => dispatch(addItem(item))}>+</button>
+            <button onClick={() => dispatch(removeItem(item))}>-</button>
+          </h1>
         ))}
       </div>
       <div>Total is {formatVND(totalPrice)}</div>

@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const totalItems = useSelector((state) => state.cart.items.length);
+  const totalItems = useSelector((state) => state.cart.totalItems);
   return (
     <>
       <div className="header">
