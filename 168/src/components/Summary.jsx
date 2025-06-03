@@ -7,11 +7,22 @@ export default function Summary() {
   const items = useSelector((state) => state.cart.items);
   const totalPrice = useSelector((state) => state.cart.totalPrice);
   const dispatch = useDispatch();
-
+  const { name, add, phone } = useSelector((state) => state.user);
   return (
     <>
       <Header />
-      {console.log(items)}
+      <div>
+        <h2>Order Summary</h2>
+        <p>
+          <strong>Name:</strong> {name}
+        </p>
+        <p>
+          <strong>Address:</strong> {add}
+        </p>
+        <p>
+          <strong>Phone:</strong> {phone}
+        </p>
+      </div>
       <div>
         {items.map((item, index) => (
           <h1 key={index}>
