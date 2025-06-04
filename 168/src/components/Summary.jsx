@@ -40,7 +40,7 @@ export default function Summary() {
           </h1>
         ))}
       </div>
-      <div>Total is {formatVND(totalPrice)}</div>
+      <div>Total is {formatVND(totalPrice + 30000)}</div>
     </>
   );
 }
