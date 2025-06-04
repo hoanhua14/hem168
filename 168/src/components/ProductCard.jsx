@@ -1,6 +1,6 @@
 import { addItem } from "../features/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
-const ProductCard = ({ name, price, id }) => {
+const ProductCard = ({ name, price, id, portionSize }) => {
   const formatVND = (number) =>
     number.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
   const dispatch = useDispatch();
@@ -19,6 +19,7 @@ const ProductCard = ({ name, price, id }) => {
       {name}
       <div>{formatVND(price)}</div>
       <div>Quantity: {quantityOfAProduct}</div>
+      <div>Portion Size: {portionSize}</div>
       <button onClick={handleAddToCart}>Add</button>
     </div>
   );
