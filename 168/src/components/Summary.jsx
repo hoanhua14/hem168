@@ -7,7 +7,9 @@ export default function Summary() {
   const items = useSelector((state) => state.cart.items);
   const totalPrice = useSelector((state) => state.cart.totalPrice);
   const dispatch = useDispatch();
-  const { name, add, phone } = useSelector((state) => state.user);
+  const { name, add, phone, deliveryTime, note } = useSelector(
+    (state) => state.user
+  );
   return (
     <>
       <Header />
@@ -21,6 +23,12 @@ export default function Summary() {
         </p>
         <p>
           <strong>Phone:</strong> {phone}
+        </p>
+        <p>
+          <strong>Delivery Time:</strong> {deliveryTime}
+        </p>
+        <p>
+          <strong>Note:</strong> {note}
         </p>
       </div>
       <div>
