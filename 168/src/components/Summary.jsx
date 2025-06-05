@@ -12,7 +12,7 @@ export default function Summary() {
     (state) => state.user
   );
   return (
-    <div>
+    <div className="summary">
       <Header />
       {items.length === 0 ? (
         <EmptyCart />

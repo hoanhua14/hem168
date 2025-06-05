@@ -4,7 +4,7 @@ import UserInfo from "./components/UserInfo";
 
 function App() {
   return (
-    <>
+    <div className="main-div">
       <Header />
       <UserInfo />
       <>
@@ -12,7 +12,7 @@ function App() {
         <Products category="Cream Puffs" />
         <Products category="Brownies" />
       </>
-    </>
+    </div>
   );
 }
 
