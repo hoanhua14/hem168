@@ -8,9 +8,9 @@ function App() {
       <Header />
       <UserInfo />
       <>
-        <Products category="Signatures" />
-        <Products category="Cream Puffs" />
-        <Products category="Brownies" />
+        <Products category="SIGNATURES" />
+        <Products category="CREAM PUFFS" />
+        <Products category="BROWNIES" />
       </>
     </div>
   );

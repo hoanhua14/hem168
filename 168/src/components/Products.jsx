@@ -1,7 +1,7 @@
 import ProductCard from "./ProductCard";
 
 const productList = {
-  Signatures: [
+  SIGNATURES: [
     {
       id: 1,
       name: "Tiramisu",
@@ -11,7 +11,7 @@ const productList = {
     },
     { id: 2, name: "Flan", price: 55000, quantity: 0, portionSize: "280 gram" },
   ],
-  "Cream Puffs": [
+  "CREAM PUFFS": [
     {
       id: 3,
       name: "Vanilla",
@@ -27,7 +27,7 @@ const productList = {
       portionSize: "6 bánh",
     },
   ],
-  Brownies: [
+  BROWNIES: [
     {
       id: 5,
       name: "Matcha",

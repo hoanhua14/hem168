@@ -14,10 +14,13 @@ export default function Header() {
         style={{
           fontWeight: "100",
           fontFamily: "'Special Elite', monospace",
+          color: "white",
         }}
       >
         <Typewriter
           words={[
+            "WELCOME TO OUR BAKERY",
+            "SINCE 2025",
             "FRESHLY BAKED",
             "MADE TO ORDER",
             "FINEST INGREDIENTS",
@@ -26,7 +29,7 @@ export default function Header() {
           loop={0} // 0 = infinite
           cursor
           cursorStyle="_"
-          typeSpeed={70}
+          typeSpeed={200}
           deleteSpeed={50}
           delaySpeed={1000}
         />
@@ -36,7 +39,7 @@ export default function Header() {
           <img
             width="30"
             height="30"
-            src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+            src="https://img.icons8.com/ios-glyphs/30/FFFFFF/shopping-cart--v1.png"
             alt="shopping-cart--v1"
           />
           {totalItems > 0 && <span className="cart-badge">{totalItems}</span>}
