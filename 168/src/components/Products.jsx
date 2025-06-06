@@ -8,6 +8,7 @@ const productList = {
       price: 100000,
       quantity: 0,
       portionSize: "230 gram",
+      img: "../public/assets/tiramisu.jpg",
     },
     { id: 2, name: "Flan", price: 55000, quantity: 0, portionSize: "280 gram" },
   ],
@@ -57,7 +58,7 @@ const Products = ({ category }) => {
     <section className="products">
       <div>
         {category}
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", height: "45vh" }}>
           {products.map((product) => (
             <ProductCard
               key={product.id}
@@ -66,6 +67,7 @@ const Products = ({ category }) => {
               id={product.id}
               quantity={product.quantity}
               portionSize={product.portionSize}
+              img={product.img}
             />
           ))}
         </div>
