@@ -16,7 +16,9 @@ const ProductCard = ({ name, price, id, portionSize, img }) => {
 
   return (
     <div className="product-card">
-      <img src={img} alt={name} className="product-img"></img>
+      <div className="product-img-box">
+        <img src={img} alt={name} className="product-img"></img>
+      </div>
       <div className="product-details">
         {name}
         <div>{formatVND(price)}</div>
