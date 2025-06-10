@@ -69,7 +69,7 @@ const Products = ({ category }) => {
   return (
     <section className="products">
       <div className="category">{category}</div>
-      <div className="product">
+      <div className="product-container">
         {products.map((product) => (
           <ProductCard
             key={product.id}
