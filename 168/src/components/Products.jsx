@@ -10,7 +10,14 @@ const productList = {
       portionSize: "230 gram",
       img: "/assets/tiramisu.jpg",
     },
-    { id: 2, name: "Flan", price: 55000, quantity: 0, portionSize: "280 gram" },
+    {
+      id: 2,
+      name: "Flan",
+      price: 55000,
+      quantity: 0,
+      portionSize: "280 gram",
+      img: "/assets/flan.jpeg",
+    },
   ],
   "CREAM PUFFS": [
     {
@@ -19,6 +26,7 @@ const productList = {
       price: 72000,
       quantity: 0,
       portionSize: "6 bánh",
+      img: "/assets/choux.jpg",
     },
     {
       id: 4,
@@ -26,6 +34,7 @@ const productList = {
       price: 77000,
       quantity: 0,
       portionSize: "6 bánh",
+      img: "/assets/choux.jpg",
     },
   ],
   BROWNIES: [
@@ -35,6 +44,7 @@ const productList = {
       price: 55000,
       quantity: 0,
       portionSize: "120 gram",
+      img: "/assets/brownie.jpg",
     },
     {
       id: 6,
@@ -42,6 +52,7 @@ const productList = {
       price: 55000,
       quantity: 0,
       portionSize: "120 gram",
+      img: "/assets/brownie.jpg",
     },
     {
       id: 7,
@@ -49,6 +60,7 @@ const productList = {
       price: 55000,
       quantity: 0,
       portionSize: "120 gram",
+      img: "/assets/brownie.jpg",
     },
   ],
 };
