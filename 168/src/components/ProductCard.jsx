@@ -20,11 +20,13 @@ const ProductCard = ({ name, price, id, portionSize, img }) => {
         <img src={img} alt={name} className="product-img"></img>
       </div>
       <div className="product-details">
-        {name}
+        <div style={{ fontWeight: "bold" }}>{name}</div>
         <div>{formatVND(price)}</div>
+        <div>{portionSize}</div>
         <div>Quantity: {quantityOfAProduct}</div>
-        <div>Portion Size: {portionSize}</div>
-        <button onClick={handleAddToCart}>Add</button>
+        <button onClick={handleAddToCart} className="add-button">
+          ADD
+        </button>
       </div>
     </div>
   );
