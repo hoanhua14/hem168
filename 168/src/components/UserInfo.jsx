@@ -25,47 +25,65 @@ export default function UserInfo() {
     navigate("/summary");
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Name:
-        <input
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-      </label>
-      <br />
-      <label>
-        Address:
-        <input value={add} onChange={(e) => setAdd(e.target.value)} required />
-      </label>
-      <br />
-      <label>
-        Phone:
-        <input
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          required
-        />
-      </label>
-      <br />
-      <label>
-        Delivery Time:
-        <input
-          type="datetime-local"
-          min={getCurrentDateTimeLocal()}
-          value={deliveryTime}
-          onChange={(e) => setDeliveryTime(e.target.value)}
-          required
-        />
-      </label>
-      <br />
-      <label>
-        Note:
-        <input value={note} onChange={(e) => setNote(e.target.value)} />
-      </label>
-      <br />
-      <button type="submit">checkout</button>
-    </form>
+    <div className="form-container">
+      <form onSubmit={handleSubmit} className="form">
+        <label>
+          Name:
+          <input
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+        </label>
+        <br />
+        <label>
+          Address:
+          <input
+            value={add}
+            onChange={(e) => setAdd(e.target.value)}
+            required
+          />
+        </label>
+        <br />
+        <label>
+          Phone:
+          <input
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            required
+          />
+        </label>
+        <br />
+        <label>
+          Delivery Time:
+          <input
+            type="datetime-local"
+            min={getCurrentDateTimeLocal()}
+            value={deliveryTime}
+            onChange={(e) => setDeliveryTime(e.target.value)}
+            required
+          />
+        </label>
+        <br />
+        <label
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "flex-start",
+          }}
+        >
+          Note:
+          <textarea
+            value={note}
+            onChange={(e) => setNote(e.target.value)}
+            rows={4}
+          />
+        </label>
+        <br />
+        <button type="submit" className="add-button">
+          checkout
+        </button>
+      </form>
+    </div>
   );
 }
